@@ -2,6 +2,7 @@ import sys
 from dataclasses import dataclass
 import os
 
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
 
 import numpy as np 
 import pandas as pd
@@ -9,8 +10,6 @@ from sklearn.compose import ColumnTransformer
 from sklearn.impute import SimpleImputer
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder,StandardScaler
-
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
 
 from src.exception import CustomException
 from src.logger import logging
