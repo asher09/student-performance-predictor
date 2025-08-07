@@ -1,6 +1,113 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>My Flask App</title>
-    <h1>Welcome</h1>
+    <meta charset="UTF-8">
+    <title>Student Performance Predictor</title>
+    <style>
+        body {
+            background: #18181b;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #f3f4f6;
+        }
+
+        .container {
+            max-width: 520px;
+            margin: 90px auto;
+            background: #232329;
+            border-radius: 16px;
+            box-shadow: 0 4px 32px rgba(0, 0, 0, 0.25);
+            padding: 48px 36px 36px 36px;
+            text-align: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 18px;
+        }
+
+        .logo-circle {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, #f43f5e 60%, #f87171 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 14px;
+        }
+
+        .logo-text {
+            font-size: 1.45em;
+            font-weight: 700;
+            color: #fff;
+            letter-spacing: 1px;
+        }
+
+        h1 {
+            color: #fff;
+            margin-bottom: 12px;
+            font-size: 2.3em;
+            letter-spacing: 1px;
+        }
+
+        p {
+            color: #cbd5e1;
+            font-size: 1.13em;
+            margin-bottom: 32px;
+        }
+
+        .btn {
+            background: linear-gradient(90deg, #f43f5e 0%, #f87171 100%);
+            color: #fff;
+            border: none;
+            padding: 15px 38px;
+            border-radius: 8px;
+            font-size: 1.15em;
+            cursor: pointer;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            box-shadow: 0 2px 8px rgba(244, 63, 94, 0.15);
+            transition: background 0.2s, transform 0.1s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background: linear-gradient(90deg, #be123c 0%, #f43f5e 100%);
+            transform: translateY(-2px) scale(1.03);
+        }
+
+        .footer {
+            margin-top: 40px;
+            color: #52525b;
+            font-size: 0.98em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <div class="logo-circle">
+                <span style="font-size:1.7em;">🎓</span>
+            </div>
+            <span class="logo-text">Student Performance Predictor</span>
+        </div>
+        <h1>Welcome</h1>
+        <p>
+            Predict student scores based on academic and demographic features.<br>
+            Click below to get started!
+        </p>
+        <a href="/predictdata" class="btn">Start Prediction</a>
+        <div class="footer">
+            &copy; 2025 Student Performance Predictor
+        </div>
+    </div>
+</body>
+
 </html>
